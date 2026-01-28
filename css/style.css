@@ -1,0 +1,240 @@
+/* 最低限のスタイル */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 80px;
+}
+
+/* ヘッダー */
+.main-header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+}
+
+/* フォーム */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    min-height: 100px;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    border: 1px solid #007bff;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: 1px solid #6c757d;
+}
+
+/* アラート */
+.alert {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.alert-error {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+/* コンテンツ */
+.content-box {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* 投稿カード */
+.post-card {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.post-author-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.post-author {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.post-content {
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* プロフィール */
+.profile-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+}
+
+.follow-form {
+    margin-top: 10px;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 20px;
+}
+
+.auth-box {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.auth-link {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.auth-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* 検索フォーム */
+.search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ユーザーリスト */
+.users-list {
+    margin-top: 20px;
+}
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.user-date {
+    font-size: 0.9em;
+    color: #666;
+}
+
+.follow-form-inline {
+    margin: 0;
+}
+
+.btn-small {
+    padding: 5px 10px;
+    font-size: 0.9em;
+}
+
+.follow-status {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: flex-end;
+}
+
+.follow-date {
+    font-size: 0.9em;
+    color: #666;
+}
