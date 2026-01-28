@@ -5,11 +5,14 @@ RUN apt-get update && apt-get install -y \
     libzip-dev \
     zip \
     unzip \
+    pkg-config \
     && rm -rf /var/lib/apt/lists/*
 
-# PDO、MySQL、Redis拡張をインストール
-RUN docker-php-ext-install pdo pdo_mysql && \
-    pecl install redis && \
+# PDO、MySQL拡張をインストール
+RUN docker-php-ext-install pdo pdo_mysql
+
+# phpredis拡張をインストール
+RUN pecl install redis && \
     docker-php-ext-enable redis
 
 # 作業ディレクトリを設定

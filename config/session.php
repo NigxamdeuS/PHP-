@@ -13,8 +13,8 @@
 
 // セッションが開始されていない場合のみ設定を適用
 if (session_status() == PHP_SESSION_NONE) {
-    // Redis接続情報を環境変数から取得（AWS ElastiCache用）
-    $redis_host = getenv('REDIS_HOST') ?: 'localhost';
+    // Redis接続情報を環境変数から取得（Docker ComposeのredisサービスまたはAWS ElastiCache用）
+    $redis_host = getenv('REDIS_HOST') ?: 'redis';
     $redis_port = getenv('REDIS_PORT') ?: 6379;
     $redis_password = getenv('REDIS_PASSWORD') ?: null;
     

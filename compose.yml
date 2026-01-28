@@ -15,6 +15,18 @@ services:
       target: php
     volumes:
       - ./public/:/var/www/public/
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
+  redis:
+    container_name: redis
+    image: redis:7-alpine
+    ports:
+      - 6379:6379
+    volumes:
+      - redis:/data
   mysql:
     container_name: mysql
     image: mysql:8.4
@@ -31,3 +43,4 @@ services:
       --max_allowed_packet=4MB
 volumes:
   mysql:
+  redis:
