@@ -57,18 +57,6 @@ docker compose down
 docker compose exec php php /var/www/public/config/init_db.php
 ```
 
-ソースをルートにマウントしている場合は、次のどちらかで実行する。
-
-```bash
-docker compose exec php php config/init_db.php
-```
-
-成功すると、次のメッセージが表示される。
-
-```
-データベースの初期化が完了しました。
-```
-
 作成されるテーブルは次の4つです
 
 - **users** … 会員情報
