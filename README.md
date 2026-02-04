@@ -25,8 +25,7 @@ docker compose -v
 リポジトリを clone してプロジェクトを配置する。
 
 ```bash
-git clone <リポジトリのURL>
-cd <クローンしたディレクトリ名>
+git clone https://github.com/NigxamdeuS/PHP-.git
 ```
 
 ---
