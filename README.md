@@ -67,7 +67,7 @@ docker compose exec php php /var/www/public/config/init_db.php
 
 1. Git をインストール（必要な場合）
 2. Docker をインストール
-3. `git clone` でソースを取得
+3. `git clone　git clone https://github.com/NigxamdeuS/PHP-.git` でソースを取得
 4. 必要に応じて `compose.yml` のボリュームをリポジトリ構成に合わせて修正
 5. `docker compose up -d --build` で起動
 6. MySQL 起動後、`docker compose exec php php ... config/init_db.php` でテーブル作成
